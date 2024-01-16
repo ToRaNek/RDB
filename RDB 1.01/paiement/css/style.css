@@ -1,0 +1,50 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(75, 75, 75, 0.400);
+    border-radius: 5px;
+    color:white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 2vh;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1vh;
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .payer {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+ header{
+  margin-bottom:5vh ;
+ }
+
+ .ecart{
+  margin-bottom: 3vh;
+ }

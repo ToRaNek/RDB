@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Economica";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Regular.ttf"),
+        format('truetype');
+}
+
+@font-face {
+    font-family: "Economica_bold";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Bold.ttf"),
+        format('truetype');
+}

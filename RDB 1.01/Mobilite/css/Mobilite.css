@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Economica";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Regular.ttf"),
+        format('truetype');
+}
+
+
+@font-face {
+    font-family: "Economica_bold";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Bold.ttf"),
+        format('truetype');
+}
+
+
+body {
+    font-size:16px;
+    color:white;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 2em ;
+    font-family: Economica;
+    margin-top: 1em;
+}
+
+
+.Choix{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    /*border-width: 10px;*/
+    /*border-style: solid;*/
+    text-align: center;
+}
+
+
+.Formu{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    /*border-width: 10px;*/
+    /*border-style: solid;*/
+    text-align: center;
+}
+
+
+.grosTexte{
+    font-size: 2em;
+    font-family: economica;
+}
+
+
+button{
+    width: 200px;
+    height: 60px;
+    background-color: #7ee2a7;
+    font-size: 20px;
+    font-family: Economica_bold;
+    color: black;
+    border-radius: 8px;
+    border-color: #7ee2a7;
+}
+
+
+.intro{
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+

@@ -1,0 +1,250 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Economica";
+  src:
+      local("Economica"),
+      url("../Font/Economica-Regular.ttf"),
+      format('truetype');
+}
+
+
+@font-face {
+  font-family: "Economica_bold";
+  src:
+      local("Economica"),
+      url("../Font/Economica-Bold.ttf"),
+      format('truetype');
+}
+header {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+.repertoire>ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Economica;
+  font-size: 20px;
+}
+
+.repertoire>ul>li{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+
+/* MP4 POUR LE FOND DU SITE*/
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.back{
+  opacity: 90%;
+  background-color: #7ee2a7;
+  font-size: 20px;
+  font-family: Economica_bold;
+  color: black;
+  border-radius: 8px;
+  border-color: #7ee2a7;
+  margin-top: 10px;
+}
+
+.buy{
+  width: 200px;
+  height: 60px;
+  background-color: #7ee2a7;
+  font-size: 20px;
+  font-family: Economica_bold;
+  color: black;
+  border-radius: 8px;
+  border-color: #7ee2a7;
+  margin-left: 75%;
+  margin-top: 6em;
+}
+
+
+
+.texte{
+    color: white;
+    text-align: center;
+    font-size: 2em ;
+    font-family: Economica;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+
+
+.annonces{
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(49, 47, 47);
+  width: 80%;
+  height: 31vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.annonces1{
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(49, 47, 47);
+  width: 80%;
+  height: 35vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.annonces2{
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(49, 47, 47);
+  width: 80%;
+  height: 31vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  display: flex;
+}
+
+
+
+/* SPECIAL POUR LES IMAGES */
+.annonces .imag{
+    width: 90%;
+    height: 80%;
+}
+
+.annonces .imag2{
+    width: 60%;
+    height: 60%;
+}
+
+.annonces1 .imag{
+  width: 70%;
+  height: 70%;
+}
+
+.annonces1 .imag2{
+  width: 60%;
+  height: 60%;
+}
+
+.annonces2 .imag{
+  width: 70%;
+  height: 70%;
+}
+
+.annonces2 .imag2{
+  width: 60%;
+  height: 60%;
+}
+
+
+
+
+/* BOX POUR FAIRE SLIDER LES IMAGES*/
+
+.slider{
+    max-width: 40vh;    /* largeur max */
+    max-height: 30vh;
+}
+
+
+.slider-1 {      /*box de dynamique*/
+    max-width: 40vh;    /* largeur max */
+    max-height: 30vh;   
+    overflow: hidden;
+    /*backdrop-filter: blur(5px);*/
+    /*border: 2px solid #f1f1f1;*/
+    border-radius: 20px;
+  }
+  .slider-1 .slider {
+    animation: slider-1 15s infinite ease-in-out;    /* animation -  nom du cobaye - durée - nombre de rep -  le reste je sais plus */
+    display: flex;
+  
+    /* Si on veut faire glisser vers la droite */
+    /* Il faut aussi changer l'animation(transform) en valeurs positives */
+    /* flex-direction: row-reverse; */
+  }
+
+.slider-1 p {
+    flex-shrink: 0;
+    padding: 72px 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-size: 45px;
+    color: #f1f1f1;
+  }
+
+  @keyframes slider-1 {
+    0%,
+    15% {
+      transform: translateX(0);
+    }
+    45%,
+    55% {
+      transform: translateX(-100%);
+    }
+    95%,
+    100%{
+      transform: translate(0);
+    }
+   /* 100%,
+    100% {
+      transform: translateX(-200%);
+    }
+    75%,
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }*/
+  } 
+
+  .star::before {
+    content: "\2605";
+    color: #ffc107;
+    font-size: 3vw;
+    margin-left: 4vw;
+  }
+  
+  .rating2 .star::before {
+    content: "\2605";
+    color: #ffffff;
+    font-size: 3vw;
+  }
+  
+  #star4_2::before,
+  #star3_2::before,
+  #star2_2::before,
+  #star1_2::before {
+    color: #ffc107;
+  }

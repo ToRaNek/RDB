@@ -1,0 +1,165 @@
+.titre{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    font-size: 2em;
+}
+
+
+button{
+    opacity: 90%;
+    background-color: #7ee2a7;
+    font-size: 20px;
+    font-family: Economica_bold;
+    color: black;
+    border-radius: 8px;
+    border-color: #7ee2a7;
+    margin-top: 10px;
+}
+
+.grid{
+    display: grid;
+    padding: 0px;
+    gap: 0px 0px;
+    grid-template-columns: repeat (3,1fr);
+    grid-template-rows: repeat (7, 1fr);
+    grid-template-areas: 
+    "nom image image"
+    "prenom image image"
+    "telephone image image"
+    "adresse description description"
+    "prix description description"
+    "horaire description description"
+    "BTNValid BTNValid BTNValid";
+    font-size:1.5em;
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+
+.required{
+    color:red;
+}
+
+input{
+    margin-bottom: 2vh;
+}
+
+.nom{
+    border-style: solid;
+    border-width: 1px;
+    grid-area:nom;
+    border-top-left-radius: 25px;
+    background-color: rgba(75, 75, 75, 0.400);
+}
+
+.prenom{
+    border-style: solid;
+    border-width: 1px;
+    grid-area:prenom;
+    background-color: rgba(75, 75, 75, 0.400);
+}
+
+.telephone{
+    border-style: solid;
+    border-width: 1px;
+    grid-area:telephone;
+    background-color: rgba(75, 75, 75, 0.400);
+}
+
+.adresse{
+    border-style: solid;
+    border-width: 1px;
+    grid-area:adresse;
+    background-color: rgba(75, 75, 75, 0.400);
+}
+
+.prix{
+    border-style: solid;
+    border-width: 1px;
+    grid-area:prix;
+    background-color: rgba(75, 75, 75, 0.400);
+}
+
+.horaire{
+    border-style: solid;
+    border-width: 1px;
+    grid-area:horaire;
+    border-bottom-left-radius: 25px;
+    background-color: rgba(75, 75, 75, 0.400);
+}
+
+.horaire input{
+    margin-left: 1vh;
+}
+
+.description {
+    border-style: solid;
+    border-width: 1px;
+    grid-area: description;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(75, 75, 75, 0.400);
+    margin-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.description input {
+    width: 40vh;
+    height: 100%; 
+    margin: 0; 
+    border: none;
+}
+
+.image{
+    border-style: solid;
+    border-width: 1px;
+    grid-area:image;
+    border-top-right-radius: 25px;
+    background-color: rgba(75, 75, 75, 0.400);
+}
+
+.image label {
+    display: block;
+    width: 150px;
+    height: 150px; 
+    background-color: #716d6d; 
+    text-align: center;
+    line-height: 150px; 
+    font-size: 14px;
+}
+
+.image {
+    position: relative;
+    display: inline-block;
+}
+
+.image input[type="file"] {
+    display: none;
+}
+
+.BTNValid{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    grid-area:BTNValid;
+    background:none;
+}
+
+.BTNValid button {
+    width: 20vh;
+    height: 10vh;
+    font-size: 2vh;
+    background: linear-gradient(to right, #146814, #00ff00);
+    margin-bottom: 8vh;
+    border-radius: 15px 5px; 
+    border:none;
+}
+
+.BTNValid button:hover {
+    background: linear-gradient(to right, #1a471a, #00ff6a); /* Adjust the hover gradient colors as needed */
+}

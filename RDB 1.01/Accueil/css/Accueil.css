@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Economica";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Regular.ttf"),
+        format('truetype');
+}
+
+@font-face {
+    font-family: "Economica_bold";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Bold.ttf"),
+        format('truetype');
+
+}
+
+body {
+    font-size: 2vw;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 43vh;
+}
+
+section .div-section-header {
+    text-align: center;
+    font-family: Economica;
+    font-size: 1.7vw;
+}
+
+section .div-section-header h2::after {
+    content: "";
+    display: block;
+    width: 2vw;
+    min-height: 0.45vh;;
+    height: 0.65vh;
+    background: #7ee2a7;
+    margin: 1vh auto;
+}
+
+.div-section-header {
+    font-family: Economica;
+}
+
+.description {
+    text-align: center;
+    color: white;
+    font-family: Economica_bold;
+    font-size: 1.8vw;
+    margin-top: 50vh;
+    margin-bottom: 25vh;
+}

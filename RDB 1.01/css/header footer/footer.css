@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Economica";
+  src:
+      local("Economica"),
+      url("../../Font/Economica-Regular.ttf"),
+      format('truetype');
+}
+
+@font-face {
+  font-family: "Economica_bold";
+  src:
+      local("Economica"),
+      url("../../Font/Economica-Bold.ttf"),
+      format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 5vh; /* Ajout de cette ligne pour que le footer reste en bas de la fenêtre */
+    position: relative; /* Ajout de cette ligne pour que le footer reste en bas de la fenêtre */
+  }
+  
+  footer {
+    margin-left: 49.3%;
+    margin-right: 50.7%;
+    position: fixed;
+    margin-bottom: 1%;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+  }
+  
+  .scrollToTop {
+    display: block;
+    width: 2vw;
+    height: 4vh;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 1vh;
+    border-radius: 5vh;
+    color: #fff;
+    font-size: 1.5vw;
+    text-decoration: none;
+    position: absolute;
+    bottom: 2vh;
+    left: 5vw;  
+  }
+  
+  .scrollToTop:hover {
+    background-color: #555;
+  }
+
+footer>a>img{
+    filter: invert(1);
+      width: 1.5vw;
+      max-width: 1.5vw;
+      margin-top: 1vh;
+      margin-left: 0.2vw;
+}

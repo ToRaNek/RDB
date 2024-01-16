@@ -1,0 +1,99 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+@font-face {
+    font-family: "Economica";
+    src:
+        local("Economica"),
+        url("../Font/Economica-Regular.ttf"),
+        format('truetype');
+}
+
+
+@font-face {
+    font-family: "Economica_bold";
+    src:
+        local("Economica"),
+        url("../Font/Economica-Bold.ttf"),
+        format('truetype');
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.select{
+    margin-top: 30vh;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#form{
+    justify-content: space-around;
+}
+
+button{
+    opacity: 90%;
+    background-color: #7ee2a7;
+    font-size: 20px;
+    font-family: Economica_bold;
+    color: black;
+    border-radius: 8px;
+    border-color: #7ee2a7;
+    margin-top: 10px;
+}
+
+.submit{
+    text-align: center;
+}
+
+
+
+.valid{
+    opacity: 90%;
+    background-color: #7ee2a7;
+    font-size: 20px;
+    font-family: Economica_bold;
+    color: black;
+    border-radius: 50px;
+    border-color: #7ee2a7;
+    margin-top: 7vh;
+    width: 20vh;
+    height: 5vh;
+    
+}
+
+input{
+    height: 5vh;
+    width: 20vh;
+    font-size: x-large;
+    color: black;
+    border-bottom-color:#7ee2a7;
+}
+
+select{
+    border-radius: 3vh;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Economica";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Regular.ttf"),
+        format('truetype');
+}
+
+@font-face {
+    font-family: "Economica_bold";
+    src:
+        local("Economica"),
+        url("../../Font/Economica-Bold.ttf"),
+        format('truetype');
+}
+@media screen and (orientation : landscape) {
+    .Connectez{
+        font-size: 3vh;
+        font-family: Economica;
+        color: white;
+        text-align: center;
+    }
+
+    .grid{
+        font-family: Economica;
+        color: white;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15vh 0vh 15vh 0vh 20vh 0vh 15vh;
+        background-color: rgba(75, 75, 75, 0.205);
+        padding: 0vw 0vw 0vw 0vw;
+        border-radius: 7vh;
+        gap: 0vh 0vw;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Connectez Connectez Connectez"
+            ". . ."
+            "Email Email Email"
+            ". . ."
+            "Mots-de-passe Mots-de-passe Mots-de-passe"
+            ". . ."
+            "MDPOUBLIER BoutonCo Inscrivez-vous";
+
+            margin-top: 5vh;
+            margin-right: 25vh;
+            margin-left: 25vh;
+    }
+    .Connectez { grid-area: Connectez; font-size: 4vh;}
+    .Email { grid-area: Email; font-size: 2vh;}
+    .Mots-de-passe { grid-area: Mots-de-passe; font-size: 2vh;}
+    .MDPOUBLIER { grid-area: MDPOUBLIER; margin-top: 2vh; font-size: 2vh;}
+    .Inscrivez-vous { grid-area: Inscrivez-vous; margin-top: 2vh; font-size: 2vh; }
+    .BoutonCo { grid-area: BoutonCo;}
+
+    .Email input{
+        font-size: 1.4vh;
+        height: 2.4vh;
+        width: 15vh;
+        color: black;
+        border-radius:2vh;
+        border-color: #7ee2a7;
+        border: 0.5vh solid #7ee2a7;
+    }
+
+    .Mots-de-passe input{
+        font-size: 1.4vh;
+        height: 2.4vh;
+        width: 15vh;
+        color: black;
+        border-radius:2vh;
+        border-color: #7ee2a7 0.5vh;
+        border: 0.5vh solid #7ee2a7;
+    }
+
+    .BoutonCo button{
+        font-size: 2vh;
+        width: 15vh;
+        height: 7vh;
+        background-color: #7ee2a7;
+        font-family: Economica_bold;
+        color: black;
+        border-radius: 2vh;
+        border-color: #7ee2a7;
+        border: 0.5vh solid #7ee2a7;
+    }
+
+    .required{
+        color: red;
+    }
+}
+
+
+
+
+@media screen and (orientation : portrait) {
+    .Connectez{
+        font-size: 3vw;
+        font-family: Economica;
+        color: white;
+        text-align: center;
+    }
+
+    .grid{
+        font-family: Economica;
+        color: white;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15vw 0vw 15vw 0vw 20vw 0vw 15vw;
+        background-color: rgba(75, 75, 75, 0.205);
+        padding: 0vw 0vw 0vw 0vw;
+        border-radius: 1vw;
+        gap: 0vw 0vw;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Connectez Connectez Connectez"
+            ". . ."
+            "Email Email Email"
+            ". . ."
+            "Mots-de-passe Mots-de-passe Mots-de-passe"
+            ". . ."
+            "MDPOUBLIER BoutonCo Inscrivez-vous";
+
+            margin-top: 5vw;
+            margin-right: 25vw;
+            margin-left: 25vw;
+            border-radius: 7vw;
+    }
+    .Connectez { grid-area: Connectez; font-size: 4vw;}
+    .Email { grid-area: Email; font-size: 2vw;}
+    .Mots-de-passe { grid-area: Mots-de-passe; font-size: 2vw;}
+    .MDPOUBLIER { grid-area: MDPOUBLIER; margin-top: 2vw; font-size: 2vw;}
+    .Inscrivez-vous { grid-area: Inscrivez-vous; margin-top: 2vw; font-size: 2vw; }
+    .BoutonCo { grid-area: BoutonCo;}
+
+    .Email input{
+        font-size: 1.4vw;
+        height: 2.4vw;
+        width: 15vw;
+        color: black;
+        border-radius:2vw;
+        border-color: #7ee2a7;
+        border: 0.5vw solid #7ee2a7;
+    }
+
+    .Mots-de-passe input{
+        font-size: 1.4vw;
+        height: 2.4vw;
+        width: 15vw;
+        color: black;
+        border-radius:2vw;
+        border-color: #7ee2a7 0.5vw;
+        border: 0.5vw solid #7ee2a7;
+    }
+
+    .BoutonCo button{
+        font-size: 2vw;
+        width: 15vw;
+        height: 7vw;
+        background-color: #7ee2a7;
+        font-family: Economica_bold;
+        color: black;
+        border-radius: 2vw;
+        border-color: #7ee2a7;
+        border: 0.5vw solid #7ee2a7;
+    }
+
+    .required{
+        color: red;
+    }
+}

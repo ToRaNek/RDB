@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Economica";
+  src:
+      local("Economica"),
+      url("../../Font/Economica-Regular.ttf"),
+      format('truetype');
+}
+
+@font-face {
+  font-family: "Economica_bold";
+  src:
+      local("Economica"),
+      url("../../Font/Economica-Bold.ttf"),
+      format('truetype');
+}
+
+  .grid {
+    display: grid; 
+    font-family: Economica;
+    font-size: 2vh;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr; 
+    grid-template-rows: 20vh 20vh 15vh 5vh 5vh 20vh; 
+    background-color: rgba(75, 75, 75, 0.205);
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". IDSalarie Email ."
+      ". Mots-de-passe Confirmer-Mots-de-passe ."
+      ". Numero-de-telephone Numero-de-telephone ."
+      "checkboxCGU  checkboxCGU checkboxCGU checkboxCGU"
+      "checkboxPromo checkboxPromo checkboxPromo checkboxPromo"
+      "Se-connectez BoutonCo BoutonCo CGU"; 
+      color: white;
+    margin-top: 5vh;
+    margin-right: 15vh;
+    margin-left: 15vh;
+    border-radius: 7vh;
+  }
+  .IDSalarie { grid-area: IDSalarie; text-align: center;}
+  .Email { grid-area: Email; text-align: center; }
+  .Mots-de-passe { grid-area: Mots-de-passe; text-align: center; }
+  .Confirmer-Mots-de-passe { grid-area: Confirmer-Mots-de-passe; text-align: center; }
+  .Numero-de-telephone { grid-area: Numero-de-telephone; text-align: center; }
+  .BoutonCo { grid-area: BoutonCo; text-align: center;  margin-top: 5vh;}
+  .Se-connectez { grid-area: Se-connectez; text-align: right; margin-top: 5vh; }
+  .checkboxCGU { grid-area: checkboxCGU; margin-left: 15%; margin-bottom: 2vh;}
+  .checkboxPromo { grid-area: checkboxPromo; margin-left: 15%; margin-bottom: 2vh; } 
+  .CGU { grid-area: CGU; margin-right: 2vh; margin-top: 5vh; }
+
+.required{
+    color: red;
+}
+
+input[type="checkbox"] {
+    border: none;
+    outline: none;
+  }
+  
+
+  input[type="checkbox"]:checked::before {
+    color: #7ee2a7; /* Changer la couleur de la coche lorsque coché */
+    background-color: #ccc; /* Garder le fond gris lorsque coché */
+  }
+  
+
+.IDSalarie input { grid-area: IDSalarie; text-align: center; font-size: 0.7vw;
+                  width: 20vh;
+                  border: solid 0.4vh;
+                  border-radius:12vh;
+                  border-color: #7ee2a7;
+}
+
+.Email input { grid-area: Email; text-align: center; font-size: 0.7vw;
+              width: 20vh;
+              border: solid 0.4vh;
+              border-radius:12vh;
+              border-color: #7ee2a7;
+}
+
+.Mots-de-passe input { grid-area: Mots-de-passe; text-align: center; font-size: 0.7vw;
+                      width: 20vh;
+                      border: solid 0.4vh;
+                      border-radius:12vh;
+                      border-color: #7ee2a7;
+}
+
+.Confirmer-Mots-de-passe input { grid-area: Confirmer-Mots-de-passe; text-align: center; font-size: 0.7vw;
+                                width: 20vh;
+                                border: solid 0.4vh;
+                                border-radius:12vh;
+                                border-color: #7ee2a7;
+}
+
+.Numero-de-telephone input { grid-area: Numero-de-telephone; text-align: center; font-size: 0.7vw;
+                            width: 20vh;
+                            border: solid 0.4vh;
+                            border-radius:12vh;
+                            border-color: #7ee2a7;
+                            }
+
+.BoutonCo button{
+    width: 16vh;
+    height: 7vh;
+    background-color: #7ee2a7;
+    font-size: 2.5vh;
+    font-family: Economica_bold;
+    color: black;
+    border-radius: 1vh;
+    border-color: #7ee2a7;
+}
+
+input[type="checkbox"] {
+  margin-top: 0vh;
+  -webkit-appearance: none; /* Pour les navigateurs basés sur WebKit (Safari, Chrome) */
+  -moz-appearance: none; /* Pour les navigateurs basés sur Gecko (Firefox) */
+  appearance: none;
+  width: 2vh; /* Taille fixe */
+  height: 2vh; /* Taille fixe */
+  border: 0.1vh solid #ffffff; /* Bordure pour la case à cocher */
+  border-radius: 2vh; /* Coins arrondis */
+  outline: none; /* Supprime la bordure par défaut */
+  cursor: pointer; /* Curseur de la souris */
+}
+
+input[type="checkbox"]:checked {
+  background-color: #7ee2a7; /* Couleur de fond lorsque la case est cochée */
+}

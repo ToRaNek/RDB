@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Economica";
+  src:
+      local("Economica"),
+      url("/Font/Economica-Regular.ttf"),
+      format('truetype');
+}
+
+@font-face {
+  font-family: "Economica_bold";
+  src:
+      local("Economica"),
+      url("/Font/Economica-Bold.ttf"),
+      format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ajout de cette ligne pour que le footer reste en bas de la fenêtre */
+    position: relative; /* Ajout de cette ligne pour que le footer reste en bas de la fenêtre */
+  }
+  
+  footer {
+    position: fixed;
+    margin-bottom: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; /* Pour centrer horizontalement le contenu du footer */
+  }
+  
+  .scrollToTop {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    position: absolute; /* Pour que le bouton reste fixe par rapport au footer */
+    bottom: 20px; /* Ajustez cette valeur pour le positionnement vertical */
+    left: 50%; /* Pour centrer horizontalement le bouton */
+    transform: translateX(-50%); /* Pour centrer horizontalement le bouton */
+  }
+  
+  .scrollToTop:hover {
+    background-color: #555;
+  }
+
+footer>a>img{
+    filter: invert(1);
+}
